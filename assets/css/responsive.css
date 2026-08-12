@@ -1,70 +1,74 @@
 @media (min-width: 1500px) and (max-width: 1625px) {
     .general__section {
-        padding: 60px 360px !important;
+        padding: 54px 260px !important;
     }
 
     .horizonal__line {
-        margin: 0 360px !important;
+        margin: 0 260px !important;
     }
 }
 
 @media (min-width: 1380px) and (max-width: 1499px) {
     .general__section {
-        padding: 60px 300px !important;
+        padding: 54px 220px !important;
     }
 
     .horizonal__line {
-        margin: 0 300px !important;;
+        margin: 0 220px !important;
     }
 }
 
 @media (min-width: 1100px) and (max-width: 1377px) {
     .general__section {
-        padding: 60px 200px !important;
+        padding: 50px 120px !important;
     }
 
     .horizonal__line {
-        margin: 0 200px !important;
+        margin: 0 120px !important;
         width: 70% !important;
     }
 }
 
 @media (min-width: 900px) and (max-width: 1099px) {
     .general__section {
-        padding: 60px 100px !important;
+        padding: 44px 80px !important;
     }
 
     .horizonal__line {
-        margin: 0 100px !important;;
+        margin: 0 80px !important;
         width: 70% !important;
     }
 }
 
 @media (min-width: 780px) and (max-width: 899px) {
     .general__section {
-        padding: 60px 50px !important;
+        padding: 40px 36px !important;
     }
 
     .horizonal__line {
-        margin: 0 50px;
-    !important;
-        width: 70% !important;
+        margin: 0 36px !important;
+        width: 75% !important;
     }
 }
 
 @media screen and (max-width: 779px) {
     .resume .resume__title {
-        font-size: 2rem !important;
+        font-size: 2.1rem !important;
+    }
+
+    .resume .resume__subtitle {
+        letter-spacing: 0.12em !important;
     }
 
     .general__section {
-        padding: 20px max(5vw, 30px) !important;
+        padding: 22px 20px !important;
         display: inline-block !important;
+        margin: 18px auto !important;
     }
 
     .horizonal__line {
-        margin: 0 max(5vw, 30px) !important;
-        width: 70% !important;
+        margin: 0 20px !important;
+        width: calc(100% - 40px) !important;
     }
 
     .general__section__title {
@@ -88,6 +92,6 @@
     }
 
     input {
-        width: 600px !important;
+        width: min(100%, 420px) !important;
     }
 }
