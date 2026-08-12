@@ -15,3 +15,10 @@ document.getElementById("contact-form").addEventListener("submit", function (eve
         })
         .catch(error => console.error("Erro:", error));
 });
+
+function renewCopyright() {
+    const year = new Date().getFullYear();
+    return `© Copyright ${year} Anderson Delmondes`;
+}
+
+document.getElementById("copyright").innerText = renewCopyright();
