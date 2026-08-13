@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-Br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -13,9 +13,13 @@
 <body>
     <main class="container">
         <section class="resume">
+            <div class="language-switcher" role="group" aria-label="Language selector">
+                <button type="button" class="language-switcher__button is-active" data-language="en">EN</button>
+                <button type="button" class="language-switcher__button" data-language="pt">PT</button>
+            </div>
             <img class="resume__background" src="/assets/images/background.jpeg" alt="Background">
-            <h1 class="resume__title">I'm Anderson Delmondes.</h1>
-            <p class="resume__subtitle">Software Developer</p>
+            <h1 class="resume__title" data-i18n="heroTitle">I'm Anderson Delmondes.</h1>
+            <p class="resume__subtitle" data-i18n="softwareDeveloper">Software Developer</p>
             <article class="resume__links">
                 <a class="resume__links__link" href="https://github.com/andersonmag/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
@@ -33,7 +37,7 @@
                 </a>
             </article>
             <article class="resume__buttons">
-                <button class="resume__buttons__button" onclick="location.href='#contact-section';">Contact</button>
+                <button class="resume__buttons__button" data-i18n="contact" onclick="location.href='#contact-section';">Contact</button>
             </article>
             <img class="resume__icon" onclick="location.href='#about-me';"
                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAo0lEQVR4nO3YPQrCQBRF4YNKSrehvZuJTfajK7BIY+X6tNWoBBIRMZ2SXDgfvGK6d2dC5gckSZL0K+uuIu2BR1cHYEaQJXB/C9DWMSlEAZw/AsSF2AJNeogSuH4JcQIWhCgNMRGuxFRUA3+nmiBDITaEiA5QJX9CJXAb2NjmTJzNj8WZH0v0cboALqnN91fKJrX53i75Ut9rn1RWr5EkSZL4pydRFnoPrkVGuQAAAABJRU5ErkJggg=="
@@ -42,8 +46,8 @@
         <section id="about-me" class="general__section about__me">
             <img class="my__photo" src="/assets/images/my-photo.jpeg" alt="Anderson Delmondes">
             <div class="general__section__content">
-                <h2>About me</h2>
-                <p>
+                <h2 data-i18n="aboutTitle">About me</h2>
+                <p data-i18n="aboutText">
                     I have been a software developer since 2020, with experience developing business solutions for
                     segments
                     including aesthetic procedures, healthcare, inspections, commercial management and logistics. I have
@@ -53,16 +57,16 @@
                     efficient development, with unit tests and best practices.
                 </p>
                 <p>
-                    <b><span>Interests: </span></b>
+                    <b><span data-i18n="interestsLabel">Interests: </span></b>
                     Software devolopment, Technology, Back-end, Front-end, Full-stack, Microservices, Mobile, Web, IA
                 </p>
             </div>
         </section>
         <section class="general__section section-content">
-            <h3 class="general__section__title">education</h3>
+            <h3 class="general__section__title" data-i18n="educationTitle">education</h3>
             <div class="general__section__content">
                 <div>
-                    <h3>Technologist in Systems Analysis and Development</h3>
+                    <h3 data-i18n="educationDegree">Technologist in Systems Analysis and Development</h3>
                     <p>
                         <i><span class="about__me__content__interests">Cruzeiro do Sul</span></i>
                         ・ 2021 - 2023
@@ -70,9 +74,9 @@
                 </div>
 
                 <div>
-                    <h3>Internet Computer Technician</h3>
+                    <h3 data-i18n="educationTechnician">Internet Computer Technician</h3>
                     <p>
-                        <i><span class="about__me__content__interests">Federal Institute of Alagoas</span></i>
+                        <i><span class="about__me__content__interests">Instituto Federal de Alagoas</span></i>
                         ・ 2018 - 2021
                     </p>
                 </div>
@@ -80,15 +84,15 @@
         </section>
         <hr class="horizonal__line">
         <section class="general__section section-content">
-            <h3 class="general__section__title">experiences</h3>
+            <h3 class="general__section__title" data-i18n="experienceTitle">experiences</h3>
             <div class="general__section__content">
                 <div>
-                    <h3>Software Developer</h3>
+                    <h3 data-i18n="softwareDeveloper">Software Developer</h3>
                     <p>
                         <i><span class="about__me__content__interests">Vetta</span></i>
-                        ・ April 2025 - Present
+                        ・ <span data-i18n="vettaPeriod">April 2025 - Present</span>
                     </p>
-                    <p class="general__section__content__description">
+                    <p class="general__section__content__description" data-i18n="vettaDescription">
                         I am currently part of the modernization of legacy architecture, contributing to the strategic
                         migration from JSF/PrimeFaces systems to modern technologies such as Quarkus and Angular,
                         increasing
@@ -102,18 +106,18 @@
                         directly on critical internal systems for the Usiminas client, ensuring integration between
                         multidisciplinary teams and consistently delivering features in a Kanban environment.
                         <br><br>
-                        <b>Tools used:</b> Angular, Ionic, PrimeFaces, Quarkus, JSF, Java, Maven, Jenkins, GitFlow and
+                        <b data-i18n="toolsUsed">Tools used:</b> Angular, Ionic, PrimeFaces, Quarkus, JSF, Java, Maven, Jenkins, GitFlow and
                         Kanban.
                     </p>
                 </div>
 
                 <div>
-                    <h3>Software Developer</h3>
+                    <h3 data-i18n="softwareDeveloper">Software Developer</h3>
                     <p>
                         <i><span class="about__me__content__interests">EmpireTech Solutions</span></i>
-                        ・ February 2024 - February 2025
+                        ・ <span data-i18n="empirePeriod">February 2024 - February 2025</span>
                     </p>
-                    <p class="general__section__content__description">
+                    <p class="general__section__content__description" data-i18n="empireDescription">
                         I participated in the development of Web/Full Stack projects, with some experience in Mobile, in
                         the
                         healthcare, inspection, commercial management and logistics segments. I was responsible for
@@ -136,12 +140,12 @@
                 </div>
 
                 <div>
-                    <h3>Software Developer</h3>
+                    <h3 data-i18n="softwareDeveloper">Software Developer</h3>
                     <p>
                         <i><span class="about__me__content__interests">BWN Aplicativos</span></i>
-                        ・ Outuber 2020 - January 2024
+                        ・ <span data-i18n="bwnPeriod">October 2020 - January 2024</span>
                     </p>
-                    <p class="general__section__content__description">
+                    <p class="general__section__content__description" data-i18n="bwnDescription">
                         I worked on the development of web software for consulting and management of clinics specialized
                         in
                         aesthetic procedures, being responsible for the delivery of Full Stack functionalities,
@@ -161,15 +165,15 @@
         </section>
         <hr class="horizonal__line">
         <section class="general__section section-content">
-            <h3 class="general__section__title">projects</h3>
+            <h3 class="general__section__title" data-i18n="projectsTitle">projects</h3>
             <div class="general__section__content">
                 <div>
-                    <h3>E-nology - An application for instrumental English in IT courses</h3>
+                    <h3 data-i18n="projectTitle">E-nology - An application for instrumental English in IT courses</h3>
                     <p>
-                        <i><span class="about__me__content__interests">Made during the technical course in Internet
+                        <i><span class="about__me__content__interests" data-i18n="projectOrigin">Made during the technical course in Internet
                                 Computer Technician</span></i>
                     </p>
-                    <p class="general__section__content__description">
+                    <p class="general__section__content__description" data-i18n="projectDescription">
                         The goal is to provide a technological option for technical learning of English for IT, helping
                         students learn and becoming an alternative for teachers in the classroom. It was presented at <a
                             href="https://erbase2020.ifal.edu.br/xbase.html" target="_blank">Erbase
@@ -184,7 +188,7 @@
         </section>
         <hr class="horizonal__line">
         <section id="contact-section" class="general__section section-content" style="align-items: center">
-            <h3 class="general__section__title">skills</h3>
+            <h3 class="general__section__title" data-i18n="skillsTitle">skills</h3>
             <div class="skills__logo">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" height="30"
                     width="43" alt="Java logo" />
@@ -230,16 +234,16 @@
                     <img style="filter: brightness(0) invert(1);"
                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAABeElEQVR4nO2YvU7DMBSFP8GGBDsVhbErE29R0YWVkVfgFXgFVjZQpSLxFJ36ClAEEyAaiQ10USR3KXZip05s0ftJZ2nk9Bzb1z8BRVEURflLHxgDBSCJVQATYECA+fcMjMuKPoy3WsYZmBWH7nwC5DBtxKGFT4DVRqmRUD//LsADcEj37AM3MQKU+gIuge32fbMFXJj5bvNSS1URzYCTFs0fA9MaD2sFKPUDXAO7EY3vAFfAt8f/BwcYAk+W31+Aswjmh8Cj5f2vwHmsVaiqh5oWec9RpMsR3qvwExygbo6GFHlVkc4sNRZ9H1gaKBoUeZMOkLY2sp45m9RNAZ8peBTBT+MGI+DZ0m4OnBrNLc/LNqMW/IQ3CFwGbSOUPIDvRtRkI5QuA7hWmXWOItJ1gCXl7eneyOsmlVuAWIgGSIzoCCRGdAQSIxs3AoXHeSaVPn0CTDIwKg7d+gQYmA+pkpnegAM86ZvLiuvbTJdamJ73Nq8oiqJsDr+nuG9Ph6HDpAAAAABJRU5ErkJggg=="
                         alt="new-post">
-                    <h3 class="light-color">Get in Touch.</h3>
+                    <h3 class="light-color" data-i18n="contactTitle">Get in Touch.</h3>
                 </div>
 
                 <form id="contact-form" class="general__section__contact" method="post">
-                    <input required type="text" placeholder="Name" name="name">
-                    <input required type="email" placeholder="Email" name="email">
-                    <textarea required placeholder="Message" rows="6" cols="45" name="message"></textarea>
+                    <input required type="text" data-i18n-placeholder="namePlaceholder" placeholder="Name" name="name">
+                    <input required type="email" data-i18n-placeholder="emailPlaceholder" placeholder="Email" name="email">
+                    <textarea required data-i18n-placeholder="messagePlaceholder" placeholder="Message" rows="6" cols="45" name="message"></textarea>
 
                     <button class="resume__buttons__button center" type="submit">
-                        Send Message
+                        <span data-i18n="sendMessage">Send Message</span>
                     </button>
                 </form>
                 <p id="status"></p>
